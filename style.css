@@ -1,0 +1,116 @@
+
+
+
+/* Basic styling for the body and header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header, footer{
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Flexbox layout for features and example-data sections */
+.features, .example-data {
+    flex: 1;
+    padding: 10px;
+}
+
+.features {
+    background-color: #e0f7fa;
+}
+
+.example-data {
+    background-color: #f1f8e9;
+}
+
+/* Container to hold features and example-data sections */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 900px;
+    gap: 20px;
+}
+
+/* Adding transition effects to buttons */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/* Styling the form and its elements using the box model */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 120px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+/* Flexbox layout for the main content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Grid layout for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+/* Responsive design using media queries */
+@media (max-width: 600px) {
+    table {
+        grid-template-columns: 1fr;
+    }
+    th, td {
+        display: block;
+        width: 100%;
+    }
+}

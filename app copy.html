@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart-Phone Price Prediction</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Smart-Phone Price Prediction</h1>
+    </header>
+    <main>
+        <section id="description">
+            <p>Predict the price of a smartphone based on its <strong>features</strong>. Our model considers various factors such as <em>brand</em>, <em>model</em>, <em>RAM</em>, <em>storage</em>, and more.</p>
+        </section>
+
+        <div class="container">
+            <div class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Brand</li>
+                    <li>Model</li>
+                    <li>Storage</li>
+                    <li>Camera</li>
+                    <li>Battery</li>
+                </ul>
+            </div>
+            <div class="example-data">
+                <h2>Example Data</h2>
+                <table>
+                    <tr>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Storage</th>
+                        <th>Camera</th>
+                        <th>Battery</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Brand A</td>
+                        <td>Model X</td>
+                        <td>64GB</td>
+                        <td>12MP</td>
+                        <td>3000mAh</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Brand B</td>
+                        <td>Model Y</td>
+                        <td>128GB</td>
+                        <td>16MP</td>
+                        <td>3500mAh</td>
+                        <td>$400</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <section id="prediction-form">
+            <h2>Predict the Price</h2>
+            <form action="/predict" method="POST">
+                <label for="brand">Brand:</label>
+                <input type="text" id="brand" name="brand"><br><br>
+                <label for="model">Model:</label>
+                <input type="text" id="model" name="model"><br><br>
+                <label for="ram">RAM:</label>
+                <input type="text" id="ram" name="ram"><br><br>
+                <label for="storage">Storage:</label>
+                <input type="text" id="storage" name="storage"><br><br>
+                <label for="camera">Camera:</label>
+                <input type="text" id="camera" name="camera"><br><br>
+                <label for="battery">Battery:</label>
+                <input type="text" id="battery" name="battery"><br><br>
+                <label for="screen_size">Screen Size:</label>
+                <input type="text" id="screen_size" name="screen_size"><br><br>
+                <input type="submit" value="Predict Price">
+            </form>
+        </section>
+
+        <section id="description">
+            <p>Predict the price of a smartphone based on its <strong>features</strong>. Our model considers various factors such as <em>brand</em>, <em>model</em>, <em>RAM</em>, <em>storage</em>, and more.</p>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Smart-Phone Price Prediction</p>
+    </footer>
+</body>
+</html>
